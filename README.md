@@ -110,7 +110,7 @@ https://agriguide-ai-farming-system.netlify.app/
 
 📂 GitHub Repository
 
-(Add your GitHub repository link here)
+https://github.com/nikitajadhav12022008-maker/Agriguide-Ai-Farming-System
 
 
 ---
