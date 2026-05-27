@@ -103,7 +103,7 @@ Advanced ML crop prediction
 
 🔗 Live Project
 
-https://agriguide-ai-farming-system.netlify.app/
+https://agriguide-pro.netlify.app/
 
 
 ---
