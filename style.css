@@ -1,0 +1,364 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #edf7e7, #dff5f2);
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #111;
+}
+
+/* GRID BACKGROUND */
+
+.tech-lines {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(0, 255, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 0, 0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: -1;
+}
+
+/* LOGIN */
+
+.container {
+  text-align: center;
+  padding-top: 180px;
+}
+
+.container h1 {
+  font-size: 48px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.buttons button {
+  padding: 14px 40px;
+  margin: 10px;
+  border: none;
+  border-radius: 14px;
+  background: green;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  background: darkgreen;
+}
+
+/* THEME BUTTON */
+
+#themeBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: green;
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+  text-align: center;
+  padding-top: 130px;
+}
+
+.dashboard h2 {
+  font-size: 42px;
+  color: green;
+  margin-bottom: 40px;
+}
+
+#languageSelect {
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 70px;
+}
+
+.card {
+  width: 250px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  padding: 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: green;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+/* PAGES */
+
+.page {
+  width: 50%;
+  margin: 120px auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 60px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.page h1,
+.page h2 {
+  color: green;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+/* INPUTS */
+
+input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  font-size: 22px;
+}
+
+input[type="file"] {
+  background: white;
+}
+
+/* BUTTONS */
+
+.button-group {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+button {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 14px;
+  background: green;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: darkgreen;
+  transform: scale(1.04);
+}
+
+/* MARKET */
+
+#marketList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.market-card {
+  width: 320px;
+  background: white;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.market-card img {
+  width: 100%;
+  border-radius: 18px;
+  margin: 20px 0;
+}
+
+.market-card h3 {
+  color: green;
+  font-size: 38px;
+}
+
+.market-card p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+/* RESULT */
+
+#scanResult {
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+/* WEATHER */
+
+#weatherResult {
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+  background: #0f1720;
+  color: white;
+}
+
+.dark-mode .card,
+.dark-mode .page,
+.dark-mode .market-card {
+  background: #1c2530;
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode select {
+  background: #111827;
+  color: white;
+  border: 1px solid #444;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+  color: #4ade80;
+}
+.market-card a {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  text-decoration: none;
+
+  background: green;
+
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+}
+
+.market-card a:hover {
+  background: darkgreen;
+}
+/* TECH MODE */
+
+.dark {
+  background: #0f172a;
+
+  color: white;
+}
+
+.dark .container,
+.dark .dashboard,
+.dark .page {
+  color: white;
+}
+
+.dark .card,
+.dark .market-card,
+.dark .result-card,
+.dark .weather-card {
+  background: #1e293b;
+
+  color: white;
+
+  border: 1px solid #334155;
+}
+
+.dark input,
+.dark select {
+  background: #111827;
+
+  color: white;
+
+  border: 1px solid #475569;
+}
+
+.dark button {
+  background: #16a34a;
+}
+
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: #4ade80;
+}
+
+.dark a {
+  color: #86efac;
+}
+.market-card {
+  padding: 25px;
+
+  border-radius: 20px;
+
+  margin: 20px;
+
+  background: white;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.market-card:hover {
+  transform: translateY(-5px);
+}
+
+.market-card a {
+  text-decoration: none;
+
+  background: green;
+
+  color: white;
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  display: inline-block;
+}
